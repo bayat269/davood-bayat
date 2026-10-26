@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -6,111 +5,436 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#171a1b">
 <title>مهندس داوود بیات | کد انتخاباتی ۲۶۹</title>
+
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#171a1b;color:#f5f3ef;font-family:Tahoma,Arial,sans-serif;line-height:2}
-.wrap{width:min(100% - 36px,1000px);margin:auto}
-header{padding:22px 0;border-bottom:1px solid #343638}
-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.logo{font-weight:bold;color:#f3ad45}
-nav a{color:#ddd;text-decoration:none;margin-right:12px;font-size:14px}
-.hero{padding:70px 0 65px;background:radial-gradient(ellipse at 15% 25%,#65451e 0%,#29251f 28%,#171a1b 72%)}
-.tag{color:#f3ad45;font-size:14px}
-h1{font-size:clamp(32px,7vw,58px);line-height:1.5;margin:12px 0}
-h2{font-size:25px}
-.gold{color:#f3ad45}
-.lead{font-size:18px;color:#ddd;max-width:700px}
-.btn{display:inline-block;background:#f3ad45;color:#191919;padding:10px 20px;border-radius:7px;text-decoration:none;font-weight:bold;margin:12px 0}
-section{padding:42px 0;border-bottom:1px solid #333638}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.card{background:#222627;border:1px solid #393c3d;padding:20px;border-radius:12px}
-.card h3{color:#f3ad45;margin-top:0}
-.muted{color:#c4c4c4}
-.contact{background:#242626;padding:24px;border-radius:12px}
-.contact a{color:#f3ad45}
-footer{text-align:center;padding:28px 0;color:#bbb;font-size:13px}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #171a1b;
+  color: #f5f3ef;
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 2;
+}
+
+.wrap {
+  width: min(100% - 36px, 1000px);
+  margin: auto;
+}
+
+header {
+  padding: 22px 0;
+  border-bottom: 1px solid #343638;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  color: #f3ad45;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f3ad45;
+}
+
+/* بخش اصلی معرفی */
+.hero {
+  padding: 65px 0;
+  background:
+    radial-gradient(
+      ellipse at 15% 25%,
+      #65451e 0%,
+      #29251f 28%,
+      #171a1b 72%
+    );
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 0;
+}
+
+.tag {
+  color: #f3ad45;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.6;
+  margin: 15px 0 22px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+.gold {
+  color: #f3ad45;
+}
+
+.lead {
+  font-size: 19px;
+  color: #e2dfd8;
+  margin: 22px 0;
+}
+
+.hero-text p {
+  margin: 18px 0;
+}
+
+.hero-photo {
+  display: block;
+  width: 340px;
+  max-width: 42%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  border: 2px solid #bd8439;
+  box-shadow: 0 15px 45px #0008;
+}
+
+.btn {
+  display: inline-block;
+  background: #f3ad45;
+  color: #191919;
+  padding: 12px 24px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 18px 0 5px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #ffc66d;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 55px 0;
+  border-bottom: 1px solid #333638;
+}
+
+section h2 {
+  margin: 0 0 25px;
+}
+
+section p {
+  margin: 18px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card {
+  background: #222627;
+  border: 1px solid #393c3d;
+  padding: 24px;
+  border-radius: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #bd8439;
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  color: #f3ad45;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.muted {
+  color: #c4c4c4;
+}
+
+.contact {
+  background: #242626;
+  padding: 26px;
+  border: 1px solid #393c3d;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.contact a {
+  color: #f3ad45;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+/* نمایش مناسب در گوشی */
+@media (max-width: 700px) {
+  .hero {
+    padding: 35px 0 45px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 2;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-photo {
+    order: 1;
+    width: min(100%, 330px);
+    max-width: 100%;
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin: 12px 0;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav > div:last-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  nav a {
+    margin: 0 4px;
+  }
+
+  section {
+    padding: 38px 0;
+  }
+
+  section h2 {
+    font-size: 23px;
+  }
+
+  .contact {
+    padding: 18px;
+    overflow-wrap: anywhere;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="wrap">
-<nav>
-<div class="logo">داوود بیات | ۲۶۹</div>
-<div>
-<a href="#about">درباره من</a>
-<a href="#goals">دغدغه‌های صنفی</a>
-<a href="#contact">ارتباط</a>
-</div>
-</nav>
-</div>
+  <div class="wrap">
+    <nav>
+      <div class="logo">داوود بیات | ۲۶۹</div>
+      <div>
+        <a href="#about">درباره من</a>
+        <a href="#goals">دغدغه‌های صنفی</a>
+        <a href="#contact">ارتباط</a>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <main>
+
 <section class="hero">
-<div class="wrap">
-<div class="tag">انتخابات اتحادیه صنف مکانیک خودرو</div>
-<h1>مهندس داوود بیات</h1>
-<h2 class="gold">کد انتخاباتی: ۲۶۹</h2>
-<p class="lead">۳۰ سال تجربه، افتخار و تلاش در کنار جامعه مکانیک‌های خودرو</p>
-<p>هم‌صنف، همراه و خدمتگزار شما</p>
-<p class="muted">با شناخت نزدیک از مشکلات و دغدغه‌های همکاران، آمده‌ام تا صدای جامعه مکانیک‌های خودرو باشم و برای پیگیری مطالبات صنفی تلاش کنم.</p>
-<a class="btn" href="#contact">راه‌های ارتباطی</a>
-</div>
+  <div class="wrap">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <div class="tag">انتخابات اتحادیه صنف مکانیک خودرو</div>
+
+        <h1>مهندس داوود بیات</h1>
+
+        <h2 class="gold">کد انتخاباتی: ۲۶۹</h2>
+
+        <p class="lead">
+          ۳۰ سال تجربه، افتخار و تلاش در کنار جامعه مکانیک‌های خودرو
+        </p>
+
+        <p>هم‌صنف، همراه و خدمتگزار شما</p>
+
+        <p class="muted">
+          با شناخت نزدیک از مشکلات و دغدغه‌های همکاران، آمده‌ام تا صدای
+          جامعه مکانیک‌های خودرو باشم و برای پیگیری مطالبات صنفی تلاش کنم.
+        </p>
+
+        <a class="btn" href="#contact">راه‌های ارتباطی</a>
+      </div>
+
+      <img
+        class="hero-photo"
+        src="davood-bayat.png"
+        alt="مهندس داوود بیات"
+      >
+
+    </div>
+  </div>
 </section>
 
 <section id="about">
-<div class="wrap">
-<h2><span class="gold">درباره</span> مهندس داوود بیات</h2>
-<p>اینجانب مهندس داوود بیات، با افتخار بیش از ۳۰ سال از عمر کاری خود را در حرفه مکانیکی و تعمیرات تخصصی خودرو سپری کرده‌ام. در این سال‌ها از نزدیک با دشواری‌ها، مسئولیت‌ها و دغدغه‌های فعالان این صنف آشنا شده‌ام.</p>
-<p>باور دارم اتحادیه‌ای پویا و اثرگذار به همدلی، شنیدن صدای اعضا، پیگیری مسئولانه مشکلات و ارتباط مستمر با همکاران نیاز دارد.</p>
-<p>هدف من، تکیه بر تجربه کاری، تعامل سازنده و پیگیری مطالبات قانونی برای بهبود شرایط صنفی و حمایت از همکاران است.</p>
-</div>
+  <div class="wrap">
+    <h2><span class="gold">درباره</span> مهندس داوود بیات</h2>
+
+    <p>
+      اینجانب مهندس داوود بیات، با افتخار بیش از ۳۰ سال از عمر کاری خود را
+      در حرفه مکانیکی و تعمیرات تخصصی خودرو سپری کرده‌ام. در این سال‌ها
+      از نزدیک با دشواری‌ها، مسئولیت‌ها و دغدغه‌های فعالان این صنف آشنا شده‌ام.
+    </p>
+
+    <p>
+      باور دارم اتحادیه‌ای پویا و اثرگذار به همدلی، شنیدن صدای اعضا،
+      پیگیری مسئولانه مشکلات و ارتباط مستمر با همکاران نیاز دارد.
+    </p>
+
+    <p>
+      هدف من، تکیه بر تجربه کاری، تعامل سازنده و پیگیری مطالبات قانونی
+      برای بهبود شرایط صنفی و حمایت از همکاران است.
+    </p>
+  </div>
 </section>
 
 <section id="goals">
-<div class="wrap">
-<h2>دغدغه‌های مشترک <span class="gold">صنف مکانیک خودرو</span></h2>
-<div class="cards">
-<div class="card">
-<h3>پیگیری مطالبات صنفی</h3>
-<p class="muted">شنیدن مشکلات همکاران و تلاش برای پیگیری قانونی مطالبات آن‌ها از مسیرهای مربوطه.</p>
-</div>
-<div class="card">
-<h3>عدالت و شفافیت</h3>
-<p class="muted">تلاش برای اطلاع‌رسانی روشن، رسیدگی منصفانه و شفافیت در امور اتحادیه.</p>
-</div>
-<div class="card">
-<h3>حمایت از فعالان حرفه</h3>
-<p class="muted">توجه به مشکلات روزمره تعمیرگاه‌ها و تلاش برای تسهیل امور قانونی و اداری همکاران.</p>
-</div>
-<div class="card">
-<h3>ارتباط مستقیم با اعضا</h3>
-<p class="muted">شنیدن پیشنهادها و انتقادهای همکاران و پیگیری آن‌ها در چارچوب اختیارات اتحادیه.</p>
-</div>
-</div>
-</div>
+  <div class="wrap">
+    <h2>دغدغه‌های مشترک <span class="gold">صنف مکانیک خودرو</span></h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>پیگیری مطالبات صنفی</h3>
+        <p class="muted">
+          شنیدن مشکلات همکاران و تلاش برای پیگیری قانونی مطالبات آن‌ها
+          از مسیرهای مربوطه.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>عدالت و شفافیت</h3>
+        <p class="muted">
+          تلاش برای اطلاع‌رسانی روشن، رسیدگی منصفانه و شفافیت در امور اتحادیه.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>حمایت از فعالان حرفه</h3>
+        <p class="muted">
+          توجه به مشکلات روزمره تعمیرگاه‌ها و تلاش برای تسهیل امور قانونی
+          و اداری همکاران.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>ارتباط مستقیم با اعضا</h3>
+        <p class="muted">
+          شنیدن پیشنهادها و انتقادهای همکاران و پیگیری آن‌ها در چارچوب
+          اختیارات اتحادیه.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<div class="wrap">
-<h2>صدای شما، <span class="gold">راهنمای پیگیری ماست</span></h2>
-<p>از شما همکار گرامی دعوت می‌کنم مشکلات، پیشنهادها و انتقادهای خود را با من در میان بگذارید.</p>
-<div class="contact">
-<p><strong>شماره تماس:</strong> <a href="tel:09366846095" dir="ltr">۰۹۳۶۶۸۴۶۰۹۵</a></p>
-<p><strong>نشانی:</strong> پاکدشت، تقاطع بلوار سپاه و بلوار شهدای رحیمی، پلاک ۱۱</p>
-<p><strong>محل فعالیت:</strong> تعمیرگاه تخصصی داوود بیات</p>
-<p class="muted">بخش ثبت مشکلات و پیشنهادها، پس از آماده‌سازی زیرساخت لازم و در صورت انتخاب‌شدن، راه‌اندازی خواهد شد.</p>
-</div>
-</div>
+  <div class="wrap">
+    <h2>صدای شما، <span class="gold">راهنمای پیگیری ماست</span></h2>
+
+    <p>
+      از شما همکار گرامی دعوت می‌کنم مشکلات، پیشنهادها و انتقادهای خود را
+      با من در میان بگذارید.
+    </p>
+
+    <div class="contact">
+      <p>
+        <strong>شماره تماس:</strong>
+        <a href="tel:09366846095" dir="ltr">۰۹۳۶۶۸۴۶۰۹۵</a>
+      </p>
+
+      <p>
+        <strong>نشانی:</strong>
+        پاکدشت، تقاطع بلوار سپاه و بلوار شهدای رحیمی، پلاک ۱۱
+      </p>
+
+      <p>
+        <strong>محل فعالیت:</strong>
+        تعمیرگاه تخصصی داوود بیات
+      </p>
+
+      <p class="muted">
+        بخش ثبت مشکلات و پیشنهادها، پس از آماده‌سازی زیرساخت لازم و در صورت
+        انتخاب‌شدن، راه‌اندازی خواهد شد.
+      </p>
+    </div>
+  </div>
 </section>
+
 </main>
 
 <footer>
-<div class="wrap">
-<p>با تجربه، برای هم‌صنفان</p>
-<p>مهندس داوود بیات | کد انتخاباتی ۲۶۹</p>
-</div>
+  <div class="wrap">
+    <p>با تجربه، برای هم‌صنفان</p>
+    <p>مهندس داوود بیات | کد انتخاباتی ۲۶۹</p>
+  </div>
 </footer>
+
 </body>
 </html>
